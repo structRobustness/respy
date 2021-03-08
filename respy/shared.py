@@ -479,7 +479,7 @@ def calculate_expected_value_functions(
 
 
     q = np.repeat(1.0 / n_draws, n_draws)
-    p = get_worst_case_probs(v, q, eta)
+    p = get_worst_case_probs(v, q, eta, is_cost=False)
 
     emax = 0
     for i in range(len(v)):
